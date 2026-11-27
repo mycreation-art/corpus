@@ -1,0 +1,136 @@
+{
+  "schema": "craftly.validation-report.v1",
+  "generated_at_utc": "2026-11-27T19:07:29Z",
+  "total_checks": 789,
+  "passed": 789,
+  "failed": 0,
+  "failures": [],
+  "controls": [
+    {
+      "case_id": "bn-wide-shapla-001",
+      "control": "decisive_change",
+      "executed": "set FX rate 122.50 as governing; recompute BDT payable for INV-D-2025-0044",
+      "observed": "payable moves 639,600.00 -> 637,000.00 (delta 2,600.00 BDT); register total would change, flagging the altered premise vs exhibit A-2",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "bn-wide-shapla-001",
+      "control": "placebo",
+      "executed": "remove/alter picnic email line; recompute all register totals",
+      "observed": "no claim, total or register row depends on the picnic email; totals identical (2820500.00)",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "bn-wide-shapla-001",
+      "control": "missing_evidence",
+      "executed": "delete L-310 annex status line; rerun release rule",
+      "observed": "annex status unavailable -> row cannot be witnessed; rule yields hold, not release",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-board-novustex-002",
+      "control": "decisive_change",
+      "executed": "treat the 6,200,000 gain as recurring in Bank B's test",
+      "observed": "leverage falls 2.3553 -> 2.1418 (< 2.2); Bank B becomes feasible; recommendation set changes and the altered premise is detected",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-board-novustex-002",
+      "control": "placebo",
+      "executed": "change Clause 7.2 security wording",
+      "observed": "no numeric decision changes; leverage/DSCR identical",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-board-novustex-002",
+      "control": "missing_evidence",
+      "executed": "remove debt schedule",
+      "observed": "existing debt 86,500,000 unverifiable -> DSCR and leverage uncomputable -> hold",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "bn-recon-brahmaputra-003",
+      "control": "decisive_change",
+      "executed": "correct BHD-1191 in the cash book exhibit to the statement figure",
+      "observed": "cash-book closing moves 288130.00 -> 246330.00 and no longer matches the statement closing; the mismatch check fires",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "bn-recon-brahmaputra-003",
+      "control": "placebo",
+      "executed": "reorder cash book rows",
+      "observed": "totals unchanged: closing still 288130.00",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "bn-recon-brahmaputra-003",
+      "control": "missing_evidence",
+      "executed": "remove statement closing line",
+      "observed": "no authoritative closing balance remains -> reconciliation cannot close -> hold",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-extract-zuboria-004",
+      "control": "decisive_change",
+      "executed": "strip trailing ', ' from the 2021 observation input",
+      "observed": "parity check rejects the row: ['EXTRACT/atom_parity']",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-extract-zuboria-004",
+      "control": "placebo",
+      "executed": "no change",
+      "observed": "rows pass unchanged (13/13 checks green)",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-extract-zuboria-004",
+      "control": "missing_evidence",
+      "executed": "point evidence_ids at a foreign exhibit",
+      "observed": "linkage check rejects: ['EXTRACT/source_row_found']",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-demand-clarion-005",
+      "control": "decisive_change",
+      "executed": "swap one urban value with the rural value",
+      "observed": "recomputed gap set no longer matches the deliverable; direction/narrowing check fails: ['DEMAND/deliverable_supported']",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-demand-clarion-005",
+      "control": "placebo",
+      "executed": "no change",
+      "observed": "case unaffected: all 9 DEMAND checks green",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-demand-clarion-005",
+      "control": "missing_evidence",
+      "executed": "empty evidence_ids on the DEMAND row",
+      "observed": "source-binding check rejects: ['DEMAND/evidence_nonempty_bound', 'DEMAND/both_exact_rows_in_evidence']",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-research-pollux-013",
+      "control": "decisive_change",
+      "executed": "add a covenant clause adopting the 4th edition",
+      "observed": "hold (hold) resolves to the wide definition (4th-edition-wide-definition); the state change is detected",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-research-pollux-013",
+      "control": "placebo",
+      "executed": "change a balance-sheet label only",
+      "observed": "ratios unchanged: narrow 2 / wide 1.8480",
+      "verdict": "pass"
+    },
+    {
+      "case_id": "en-research-pollux-013",
+      "control": "missing_evidence",
+      "executed": "remove edition dates",
+      "observed": "supersession claim (3rd ed 2019 vs 4th ed 2024) unsupported -> hold deepens (definition cannot be ranked by recency)",
+      "verdict": "pass"
+    }
+  ]
+}
